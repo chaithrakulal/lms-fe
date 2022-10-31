@@ -1,0 +1,38 @@
+.login-container-outer-wrapper {
+  height: 95%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.login-container-img-wrapper {
+  height: 100%;
+  width: 50%;
+}
+.login-container-img-wrapper .login-img {
+  height: 100%;
+  width: 100%;
+}
+
+.login-container-form-wrapper {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login-container-form-wrapper .login-form {
+  background-color: azure;
+}/*# sourceMappingURL=login.css.map */

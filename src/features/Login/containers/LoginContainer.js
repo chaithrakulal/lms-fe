@@ -1,27 +1,40 @@
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Login from "../components/Login";
 
 export default function LoginContainer() {
+  const Users = [
+    { username: "user1", password: "1234" },
+    { username: "user2", password: "abcd" },
+  ];
+
+  const navigate = useNavigate();
+  const [formEle, setFormEle] = useState({});
+
   const handleSubmit = (event) => {
-    //Prevent page reload
-    event.preventDefault();
-
-    var { uname, pass } = document.forms[0];
-
-    // Find user login info
-    const userData = database.find((user) => user.username === uname.value);
-
-    // Compare user info
-    if (userData) {
-      if (userData.password !== pass.value) {
-        // Invalid password
-        setErrorMessages({ name: "pass", message: errors.pass });
-      } else {
-        setIsSubmitted(true);
-      }
-    } else {
-      // Username not found
-      setErrorMessages({ name: "uname", message: errors.uname });
+    if (formEle.username === "") alert("please enter your username");
+    else if (formEle.password === "") alert("Please enter your password");
+    else {
+      let abc = Users?.find(
+        (user) =>
+          user.username === formEle?.username &&
+          user.password === formEle?.password
+      );
+      if (abc) navigate("/home");
+      else alert("Invalid username and password");
     }
   };
-  return <Login handleSubmit={handleSubmit} />;
+
+  const handleEleChange = (e, type) => {
+    formEle[type] = e.target.value;
+    setFormEle({ ...formEle });
+  };
+
+  return (
+    <Login
+      handleSubmit={handleSubmit}
+      handleEleChange={handleEleChange}
+      formEle={formEle}
+    />
+  );
 }
