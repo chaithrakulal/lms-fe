@@ -1,43 +1,5 @@
-// .loginOuterWrapper {
-//   background-color: white;
-//   height: 30%;
-//   width: 50%;
-//   padding: 2rem;
-//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-// }
-// .login-title {
-//   align-items: center;
-// }
-// .input-container {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 8px;
-//   margin: 10px;
-// }
-// .button-container {
-//   display: flex;
-//   justify-content: center;
-// }
-// input[type="text"],
-// input[type="password"] {
-//   height: 25px;
-//   border: 1px solid rgba(0, 0, 0, 0.2);
-// }
-// button[type="submit"] {
-//   margin-top: 10px;
-//   cursor: pointer;
-//   font-size: 15px;
-//   background: #01d28e;
-//   border: 1px solid #01d28e;
-//   color: #fff;
-//   padding: 10px 20px;
-// }
-// button[type="submit"]:hover {
-//   background: #6cf0c2;
-// }
-
 .login-container-outer-wrapper {
-  height: 95%;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -51,13 +13,128 @@
     width: 100%;
   }
 }
-.login-container-form-wrapper {
+.login-container-content-wrapper {
   height: 100%;
   width: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  .login-form {
-    background-color: azure;
+  justify-content: center;
+  .login-container-inner-wrapper {
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .login-container-heading {
+      width: 95%;
+      margin: 2%;
+      height: 10%;
+      text-align: center;
+      .login-container-heading-content {
+        font-size: 1.75rem;
+        color: #0d0d0d;
+      }
+    }
+    .login-container-form-title {
+      height: 10%;
+      width: 95%;
+      text-align: center;
+      margin: 2%;
+      .form-title {
+        font-size: 1.3rem;
+        color: #0d0d0d;
+        text-transform: uppercase;
+      }
+    }
+
+    .login-container-form {
+      width: 70%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .form-label {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #0d0303;
+        margin: 2% 0;
+      }
+      .form-textbox {
+        height: 60%;
+        width: 95%;
+        padding: 2%;
+        border-radius: 5px;
+        border: 1px solid #090909;
+        outline: none;
+      }
+      .login-form-username-container {
+        height: 20%;
+        width: 90%;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+      }
+      .login-form-password-container {
+        height: 20%;
+        width: 90%;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+      }
+      .login-form-rememberme-forgot {
+        height: 20%;
+        width: 90%;
+        margin: 2%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .form-label-remember-me {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #0d0303;
+        margin: 2% 0;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        .form-checkbox-remember-me {
+          margin-right: 2%;
+        }
+      }
+      .login-forgot-password {
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #0d0303;
+        margin: 2% 0;
+        width: 45%;
+        text-align: right;
+        text-decoration: underline #2970db;
+      }
+      .login-forgot-password:hover {
+        text-decoration: underline red;
+      }
+    }
+    .login-form-btn-container {
+      height: 20%;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      .login-btn {
+        background: #0c57ea;
+        border-radius: 5px;
+        width: 35%;
+        height: 60%;
+        border: 1px solid #0c5fed;
+        color: #f9f8f8;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
   }
 }
