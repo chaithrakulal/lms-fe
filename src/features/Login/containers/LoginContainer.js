@@ -5,7 +5,7 @@ import Login from "../components/Login";
 export default function LoginContainer() {
   const Users = [
     { username: "user1", password: "1234" },
-    { username: "user2", password: "abcd" },
+    { username: "John123", password: "John@123" },
   ];
 
   const navigate = useNavigate();
