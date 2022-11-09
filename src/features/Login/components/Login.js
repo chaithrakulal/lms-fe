@@ -6,7 +6,11 @@ function Login({ handleSubmit, handleEleChange, formEle }) {
     <>
       <div className="login-container-outer-wrapper">
         <div className="login-container-img-wrapper">
-          <img className="login-img" src={images.loginImage} alt="Login-img" />
+          <img
+            className="login-img"
+            src={images.loginImage}
+            alt="updapt-logo"
+          />
         </div>
         <div className="login-container-content-wrapper">
           <div className="login-container-inner-wrapper">
