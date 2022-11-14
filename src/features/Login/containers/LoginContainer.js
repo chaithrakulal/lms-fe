@@ -1,26 +1,28 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Login from "../components/Login";
+import { ApiHanlder } from "../constants/ApiHandler";
 
 export default function LoginContainer() {
-  const Users = [
-    { username: "user1", password: "1234" },
-    { username: "John123", password: "John@123" },
-  ];
-
   const navigate = useNavigate();
+
   const [formEle, setFormEle] = useState({});
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     if (formEle.username === "") alert("please enter your username");
     else if (formEle.password === "") alert("Please enter your password");
     else {
-      let abc = Users?.find(
-        (user) =>
-          user.username === formEle?.username &&
-          user.password === formEle?.password
+      const response = await ApiHanlder.authenticateLogin(
+        formEle?.username,
+        formEle?.password
       );
-      if (abc) navigate("/home");
+      console.log("response", response);
+      // let abc = Users?.find(
+      //   (user) =>
+      //     user.username === formEle?.username &&
+      //     user.password === formEle?.password
+      // );
+      if (response) navigate("/home");
       else alert("Invalid username and password");
     }
   };

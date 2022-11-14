@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Axios from "axios";
 
 import Login from "./features/Login";
 import Home from "./features/Home";
@@ -11,17 +10,6 @@ import Holiday from "./features/Home/Holiday";
 import LeaveStatus from "./features/Home/LeaveStatus";
 
 function App() {
-  const [data, setData] = useState();
-  const getData = async () => {
-    const response = await Axios.get("http://localhost:5000/");
-    setData(response.data);
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  console.log("Backend data", data);
   return (
     <div className="App">
       <Routes>
