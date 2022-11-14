@@ -61,32 +61,46 @@
         color: #0d0303;
         margin: 2% 0;
       }
-      .form-textbox {
-        height: 60%;
-        width: 95%;
-        padding: 2%;
+      .input-wrapper {
+        height: 50%;
+        display: flex;
+        flex-direction: row;
         border-radius: 5px;
         border: 1px solid #090909;
         outline: none;
+        align-items: center;
+        padding: 2%;
+      }
+      .form-textbox {
+        height: 60%;
+        width: 90%;
+        padding: 2%;
+        border: none;
+        outline: none;
+      }
+      .form-input-icon {
+        height: 20px;
+        width: 20px;
+        padding: 2%;
       }
       .login-form-username-container {
-        height: 20%;
+        height: 25%;
         width: 90%;
         margin: 2%;
         display: flex;
         flex-direction: column;
       }
       .login-form-password-container {
-        height: 20%;
+        height: 25%;
         width: 90%;
-        margin: 2%;
+        margin-bottom: 2%;
         display: flex;
         flex-direction: column;
       }
       .login-form-rememberme-forgot {
-        height: 20%;
+        height: 15%;
         width: 90%;
-        margin: 2%;
+        margin-bottom: 2%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -96,7 +110,7 @@
         font-size: 0.9rem;
         font-weight: 500;
         color: #0d0303;
-        margin: 2% 0;
+        margin-bottom: 2% 0;
         width: 45%;
         display: flex;
         align-items: center;
@@ -113,27 +127,33 @@
         margin: 2% 0;
         width: 45%;
         text-align: right;
-        text-decoration: underline #2970db;
+        text-decoration: underline #2863ff;
       }
       .login-forgot-password:hover {
         text-decoration: underline red;
       }
     }
     .login-form-btn-container {
-      height: 20%;
+      height: 15%;
       width: 90%;
       display: flex;
       justify-content: center;
+      margin-bottom: 2%;
+      align-items: center;
       .login-btn {
-        background: #0c57ea;
+        background-color: #2863ff;
         border-radius: 5px;
-        width: 35%;
-        height: 60%;
-        border: 1px solid #0c5fed;
-        color: #f9f8f8;
+        width: 100%;
+        height: 90%;
+        border: 1px solid #2863ff;
+        color: #fff;
         font-size: 0.9rem;
         font-weight: 500;
         text-transform: uppercase;
+      }
+      .login-btn:hover {
+        color: #fff;
+        background-color: #455ee4;
       }
     }
   }

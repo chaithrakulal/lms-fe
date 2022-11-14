@@ -27,28 +27,48 @@ function Login({ handleSubmit, handleEleChange, formEle }) {
               {/* <div className="login-container-form-wrapper"> */}
               <div className="login-form-username-container">
                 <label className="form-label">Username</label>
-                <input
-                  onChange={(e) => {
-                    handleEleChange(e, "username");
-                  }}
-                  type="text"
-                  value={formEle.username}
-                  name="username"
-                  placeholder="John123"
-                  className="form-textbox"
-                />
+                <div className="input-wrapper">
+                  <img
+                    className="form-input-icon"
+                    src={images.mailImage}
+                    alt="mail-img"
+                  />
+                  <input
+                    onChange={(e) => {
+                      handleEleChange(e, "username");
+                    }}
+                    type="text"
+                    value={formEle.username}
+                    name="username"
+                    placeholder="John123"
+                    className="form-textbox"
+                  />
+                </div>
               </div>
               <div className="login-form-password-container">
                 <label className="form-label">Password</label>
-                <input
-                  onChange={(e) => {
-                    handleEleChange(e, "password");
-                  }}
-                  type="password"
-                  value={formEle.password}
-                  placeholder="John@123"
-                  className="form-textbox"
-                />
+                <div className="input-wrapper">
+                  <img
+                    className="form-input-icon"
+                    src={images.passwordImage}
+                    alt="mail-img"
+                  />
+
+                  <input
+                    onChange={(e) => {
+                      handleEleChange(e, "password");
+                    }}
+                    type="password"
+                    value={formEle.password}
+                    placeholder="John@123"
+                    className="form-textbox"
+                  />
+                  <img
+                    className="form-input-icon"
+                    src={images.eyeClose}
+                    alt="mail-img"
+                  />
+                </div>
               </div>
               <div className="login-form-rememberme-forgot">
                 <label className="form-label-remember-me">
@@ -76,7 +96,7 @@ function Login({ handleSubmit, handleEleChange, formEle }) {
                   type="submit"
                   className="login-btn"
                 >
-                  Sign In
+                  LOG IN
                 </button>
               </div>
               {/* </div> */}
