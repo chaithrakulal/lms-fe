@@ -1,0 +1,76 @@
+.apply-leave-outer-wrapper {
+  height: 80%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.apply-leave-content-wrapper {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.apply-leave-inner-wrapper {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.apply-leave-header {
+  padding: 20px;
+  -webkit-box-shadow: 0px 3px 6px rgba(44, 40, 40, 0.1098039216);
+          box-shadow: 0px 3px 6px rgba(44, 40, 40, 0.1098039216);
+}
+
+.apply-leave-body-container {
+  margin: 2%;
+}
+
+.mandatory-field {
+  margin-left: 1px;
+  color: red;
+}
+
+.date-wrapper {
+  padding: 20px 0 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.date-wrapper span {
+  padding: 0 10px 0 0;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+.button-wrapper .submit-button {
+  position: fixed;
+  left: 30%;
+}
+.button-wrapper button {
+  background-color: #1b27a5; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}/*# sourceMappingURL=applyLeave.css.map */

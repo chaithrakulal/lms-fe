@@ -1,6 +1,7 @@
 import React from "react";
 import "../SCSS/login.css";
 import images from "../../Imagevariables";
+
 function Login({ handleSubmit, handleEleChange, formEle }) {
   return (
     <>
@@ -34,6 +35,7 @@ function Login({ handleSubmit, handleEleChange, formEle }) {
                     alt="mail-img"
                   />
                   <input
+                    className="form-textbox"
                     onChange={(e) => {
                       handleEleChange(e, "username");
                     }}
@@ -41,7 +43,6 @@ function Login({ handleSubmit, handleEleChange, formEle }) {
                     value={formEle.username}
                     name="username"
                     placeholder="John123"
-                    className="form-textbox"
                   />
                 </div>
               </div>

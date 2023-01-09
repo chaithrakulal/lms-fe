@@ -12,4 +12,17 @@ export const ApiHanlder = {
       throw error;
     }
   },
+  addLeaveEntry: async (userid, startdate, endDate, reason) => {
+    try {
+      const response = await apiAuth.postApiwithoutAuth(
+        url.addLeaveEntry(),
+        userid,
+        startdate,
+        endDate,
+        reason
+      );
+    } catch (error) {
+      throw error;
+    }
+  },
 };
