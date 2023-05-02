@@ -7,6 +7,7 @@ const images = {
   eyeOpen: require("./Assets/Images/eye-open.png"),
   mailImage: require("./Assets/Images/mail.png"),
   passwordImage: require("./Assets/Images/password.png"),
+  holiDayList: require("./Assets/Images/holidayList.jpg"),
 };
 
 export default images;

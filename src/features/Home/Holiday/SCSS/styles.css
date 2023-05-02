@@ -5,4 +5,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.holidays .holiday-image {
+  height: 90%;
+  width: 90%;
 }/*# sourceMappingURL=styles.css.map */

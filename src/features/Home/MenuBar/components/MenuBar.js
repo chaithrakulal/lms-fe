@@ -25,7 +25,7 @@ export default function MenuBar() {
         </div>
       </div>
       <div className="menu-bar-profile-container">
-        <NavLink to="/">User</NavLink>
+        <NavLink to="/">Logout</NavLink>
       </div>
     </div>
   );
